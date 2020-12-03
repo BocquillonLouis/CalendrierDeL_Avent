@@ -4,8 +4,6 @@ html, body {
 	color: #202035;
 }
 
-#btnBravo {
-	background: transparent;
-	border: none !important;
+a, a:hover {
 	color: #202035;
 }
