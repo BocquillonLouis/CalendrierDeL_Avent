@@ -3,3 +3,8 @@ html, body {
 	background-color: #202035;
 	color: white;
 }
+
+a, a:hover {
+	text-decoration: none;
+	color: white;
+}
