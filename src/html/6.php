@@ -1,8 +1,6 @@
 <?php
     require "gestionSession.php";
 
-    $_SESSION['masque'] = 5;
-
     if (!isset($_SESSION['masque']) || isset($_SESSION['masque']) && $_SESSION['masque'] == 0) {
         header('Location: ../../index.php');
     } else if ($_SESSION['masque'] != 5) {
@@ -38,7 +36,7 @@
                     ?>
                         <h1 class="trouve">Félicitations, tu peux passer à l'énigme suivante !</h1>
                         <br /><img src="../img/6.png"><br /><br />
-                        <a href="6.php" class="btn btn-primary trouve">Énigme suivante</a>
+                        <a href="7.php" class="btn btn-primary trouve">Énigme suivante</a>
 
                     <?php } else { ?>
                         <p>Clique sur ce bouton pour afficher le masque</p>
