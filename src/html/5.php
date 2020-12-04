@@ -18,34 +18,47 @@
         <title>Enigme 5</title>
 
         <!-- Bootstrap -->
-        <link href="src/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="../bootstrap/bootstrap.css" rel="stylesheet">
 
         <!-- CSS -->
-        <link href="src/css/index.css" rel="stylesheet">
+        <link href="../css/4.css" rel="stylesheet">
     </head>
 
     <body>
-	<center>
-		Quel est le mot de passe ?
-		<!-- Le mot de passe est dindon -->
-		<form method="post" action="">
-			<input type="text" name="saisieMdp"/>
-			<input type="submit" name="validationMdp" value="Valider"/>	
-		</form>
-		<button><a href="2.html">Cliquez ici !</a></button>
-		<?php
-			if(isset($_POST['saisieMdp'])) {
-				if ($_POST['saisieMdp'] == "dindon") {
-					$_SESSION['masque']=5;
-		?>
-					<h1 class="trouve">Félicitations, tu peux passer à l'énigme suivante !</h1>
-					<br /><img src="../img/5.png"><br /><br />
-					<a href="6.php?" class=" btn btn-primary trouve">Énigme suivante</a>
-		<?php
-				}
-			}
-		?>
-	</center>
+
+        <div class="container d-flex h-100 flex-column">
+
+            <div class="row my-auto text-center" id="part1">
+                <div class="col-md-12">
+
+                    <!-- Test bon mdp saisi -->
+                    <?php if (isset($_POST['mdp']) && $_POST['mdp'] == "dindon") {
+                        $_SESSION['masque'] = 5;
+                    ?>
+                        <h1 class="trouve">Félicitations, tu peux passer à l'énigme suivante !</h1>
+                        <br /><img src="../img/5.png"><br /><br />
+                        <a href="6.php" class="btn btn-primary trouve">Énigme suivante</a>
+
+                    <?php } else { ?>
+
+                        <?php if (isset($_POST['mdp'])) {?>
+                            <div class="alert alert-danger" role="alert">Mauvais mot de passe</div>
+                        <?php } ?>
+                        
+                        <h3>Cette fois ci, vous devez trouver le mot de passe sans indice ... Bonne chance !</h3><br />
+                        <!-- Le mot de passe est : dindon -->
+
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="mdp">Mot de passe :</label>
+                                <input type="text" name="mdp">
+                            </div>
+                        </form>
+                    <?php } ?>
+                    
+                </div>
+            </div>
+        </div>
     </body>
 
 </html>
