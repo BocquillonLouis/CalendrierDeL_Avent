@@ -37,7 +37,7 @@
                     ?>
                         <h1 class="trouve">Félicitations, tu peux passer à l'énigme suivante !</h1>
                         <br /><img src="../img/4.png"><br /><br />
-                        <a href="5.php?" class=" btn btn-primary trouve">Énigme suivante</a>
+                        <a href="5.php" class="btn btn-primary trouve">Énigme suivante</a>
 
                     <?php } else { ?>
 

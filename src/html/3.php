@@ -38,7 +38,8 @@
 
                     <?php } else { ?>
                         <!-- Code si masque pas encore trouvé -->
-                        <?php echo 'session : ' . $_SESSION['masque'];
+                        <?php echo 'session : ' . $_SESSION['masque']; ?>
+                        
                     <?php } ?>
                     
                 </div>

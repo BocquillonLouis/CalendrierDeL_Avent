@@ -36,7 +36,7 @@
                     ?>
                         <h1 class="trouve">Félicitations, tu peux passer à l'énigme suivante !</h1>
                         <br /><img src="../img/2.png"><br /><br />
-                        <a href="3.php?" class=" btn btn-primary trouve">Énigme suivante</a>
+                        <a href="3.php" class="btn btn-primary trouve">Énigme suivante</a>
                     <?php } else { ?>
                         <h1>--><a href="2.php?masqueTrouve=true">Bravo, tu as trouvé !</a><--</h1>
                     <?php } ?>
