@@ -33,13 +33,12 @@
 
                     <?php if (isset($_GET['masqueTrouve']) && $_GET['masqueTrouve'] == "true") {
                         $_SESSION['masque'] = 3;
-                        echo 'Session : '.$_SESSION['masque'];
                     ?>
                         <!-- Code si masque trouvé (énigme résolue) -->
 
                     <?php } else { ?>
                         <!-- Code si masque pas encore trouvé -->
-                        <?php echo 'session : ' . $_SESSION['masque'];?>
+                        <?php echo 'session : ' . $_SESSION['masque'];
                     <?php } ?>
                     
                 </div>

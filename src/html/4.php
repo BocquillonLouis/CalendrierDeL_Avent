@@ -21,7 +21,7 @@
         <link href="../bootstrap/bootstrap.css" rel="stylesheet">
 
         <!-- CSS -->
-        <link href="../css/2.css" rel="stylesheet">
+        <link href="../css/4.css" rel="stylesheet">
     </head>
 
     <body>
@@ -31,15 +31,33 @@
             <div class="row my-auto text-center" id="part1">
                 <div class="col-md-12">
 
-                    <!-- Button trigger modal -->
-                    <h1>TODO</h1>
-                    <?php echo 'masque = ' . $_GET['masque']; ?>
+                    <!-- Test bon mdp saisi -->
+                    <?php if (isset($_POST['mdp']) && $_POST['mdp'] == 276) {
+                        $_SESSION['masque'] = 4;
+                    ?>
+                        <h1 class="trouve">Félicitations, tu peux passer à l'énigme suivante !</h1>
+                        <br /><img src="../img/4.png"><br /><br />
+                        <a href="5.php?" class=" btn btn-primary trouve">Énigme suivante</a>
+
+                    <?php } else { ?>
+
+                        <?php if (isset($_POST['mdp'])) {?>
+                            <div class="alert alert-danger" role="alert">Mauvais mot de passe</div>
+                        <?php } ?>
+                        
+                        <h3>Voici 3 chiffres : 6, 2, 7. Saurez-vous trouver le mot de passe, composé de ces 3 chiffres ?</h3><br />
+
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="mdp">Mot de passe :</label>
+                                <input type="number" name="mdp" min="267" max="762">
+                            </div>
+                        </form>
+                    <?php } ?>
+                    
                 </div>
             </div>
         </div>
-
-        <script src="../bootstrap/jquery-3.5.1.min.js"></script>
-        <script src="../bootstrap/bootstrap.js"></script>
     </body>
 
 </html>
