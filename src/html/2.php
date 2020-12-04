@@ -33,7 +33,6 @@
 
                     <?php if (isset($_GET['masqueTrouve']) && $_GET['masqueTrouve'] == "true") {
                         $_SESSION['masque'] = 2;
-                        echo 'Session : '.$_SESSION['masque'];
                     ?>
                         <h1 class="trouve">Félicitations, tu peux passer à l'énigme suivante !</h1>
                         <br /><img src="../img/2.png"><br /><br />

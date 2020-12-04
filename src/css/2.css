@@ -1,11 +1,12 @@
 html, body {
 	height: 100%;
 	background-color: #202035;
-	/*color: #202035;*/
+	color: #202035;
 }
 
 a, a:hover {
-	/*color: #202035;*/
+	color: #202035;
+	text-decoration: none;
 }
 
 .trouve {
