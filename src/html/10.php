@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="Je_Tombe_A_Pique" content="">
-        <title>Accueil</title>
+        <title>Énigme 10</title>
 
         <!-- Bootstrap -->
-        <link href="src/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="../bootstrap/bootstrap.css" rel="stylesheet">
 
         <!-- CSS -->
-        <link href="src/css/4.css" rel="stylesheet">
+        <link href="../css/4.css" rel="stylesheet">
     </head>
 
     <body>
@@ -19,8 +19,7 @@
             <div class="row my-auto text-center" id="part1">
                 <div class="col-md-12">
 
-                    <p class="lead">Bienvenue !</p>
-                    <a class="btn btn-primary" href="index.php">Commencer</a>
+                    <p class="lead">Nous n'avons malheureusement pas eu le temps de finir. La chasse s'arrête ici. Désolé :/</p>
                     
                 </div>
             </div>
